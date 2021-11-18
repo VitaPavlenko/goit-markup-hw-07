@@ -17,126 +17,53 @@
 
 /* Секция преимущества */
 
-.cont-link {
-  display: flex;
-}
-
-.advantage-block {
-  width: 25%;
-  margin-left: 30px;
-}
-
-.advantage-block:first-child {
-  margin-left: 0;
-}
-
-.advantage {
-  margin-bottom: 30px;
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
-  align-items: center;
-  justify-content: center;
-}
-
-.advantage-icon {
-  width: 70px;
-  height: 70px;
-  align-items: center;
-}
-
-.title {
-  margin-bottom: 10px;
-  padding-top: 30px;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.text {
-  color: var(--title-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-}
-
 /* Заголовки */
-.headline {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
-.imgs {
-  display: flex;
-}
-
-.imgs-list {
-  margin-left: 30px;
-  position: relative;
-}
-
-.imgs-list:first-child {
-  margin-left: 0;
-}
-
-.top-text {
-  position: absolute;
-  font-size: 14px;
-  line-height: 1.14;
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  top: 224px;
-  color: var(--accent-whiter-color);
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 27px;
-}
 
 /* Команда */
 
-.command {
+.about {
   display: flex;
 }
 
-.com-title {
+.about-list {
   margin-left: 30px;
 }
 
-.com-title:first-child {
+.about-list:first-child {
   margin-left: 0;
 }
 
-.list {
+.about-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.item {
+.about-text {
   margin-bottom: 16px;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
 }
 
-.command-text {
+.about-items {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
-.command-list {
+
+.socials {
   display: flex;
   padding-right: 32px;
   padding-left: 32px;
   justify-content: space-between;
 }
 
-.command-item {
+.socials-list {
+}
+
+.socials-link {
   display: inline-flex;
   width: 44px;
   height: 44px;
@@ -149,11 +76,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-item:last-child {
+.socials-link:last-child {
   margin-right: 0px;
 }
 
-.command-icon {
+.socials-icon {
   display: inline-flex;
   width: 20px;
   height: 20px;
@@ -161,8 +88,8 @@
   background-position: center;
 }
 
-.command-item:hover,
-.command-item:focus {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-bg-color);
 }

@@ -1,0 +1,41 @@
+.feature {
+  display: flex;
+}
+
+.feature-list {
+  width: 25%;
+  margin-left: 30px;
+}
+
+.feature-list:first-child {
+  margin-left: 0;
+}
+
+.feature-img {
+  margin-bottom: 30px;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
