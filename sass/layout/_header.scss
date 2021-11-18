@@ -1,0 +1,121 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-set {
+  display: flex;
+}
+
+.nav-list {
+  margin-right: 50px;
+}
+
+.nav-list:last-child {
+  margin: 0;
+}
+
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-adress {
+  display: flex;
+  color: var(--title-text-color);
+}
+
+.nav-adress-list {
+  display: inline-block;
+  color: var(--title-text-color);
+  margin-right: 50px;
+  fill: var(--title-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-adress-list:last-child {
+  margin: 0;
+}
+
+.nav-adress-list:hover,
+.nav-adress-list:focus {
+  fill: var(--accent-color);
+}
+
+.widget {
+  width: 142px;
+}
+
+.nav-icon {
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.icon-envelope {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  background-size: cover;
+}
+
+.connect {
+  color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect:hover,
+.connect:focus {
+  color: var(--accent-color);
+}
+
+.connect .current {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  background-color: var(--accent-color);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 76px;
+}
