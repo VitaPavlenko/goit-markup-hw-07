@@ -394,6 +394,11 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socials-link:hover, .socials-link:focus {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
 .socials-link:last-child {
   margin-right: 0px;
 }
@@ -404,12 +409,6 @@ ul {
   height: 20px;
   background-size: contain;
   background-position: center;
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  background-color: var(--accent-color);
-  fill: var(--primary-bg-color);
 }
 
 .about-soc-link {
