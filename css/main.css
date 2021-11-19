@@ -75,6 +75,7 @@ ul {
 }
 
 .logo {
+  margin-right: 93px;
   color: #2196f3;
   font-family: raleway, sans-serif;
   font-size: 26px;
@@ -102,12 +103,12 @@ ul {
 
 .nav-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .nav-set {
   display: flex;
+  margin-right: 305px;
 }
 
 .nav-list {
@@ -119,6 +120,11 @@ ul {
 }
 
 .nav-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -132,17 +138,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
-}
-
-.nav-link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
 }
 
 .nav-adress {
@@ -164,8 +161,7 @@ ul {
   margin: 0;
 }
 
-.nav-adress-list:hover,
-.nav-adress-list:focus {
+.nav-adress-list:hover, .nav-adress-list:focus {
   fill: var(--accent-color);
 }
 
@@ -199,8 +195,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.connect:hover,
-.connect:focus {
+.connect:hover, .connect:focus {
   color: var(--accent-color);
 }
 
@@ -239,8 +234,9 @@ ul {
 }
 
 .hero {
-  width: 1600px;
   height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--accent-bg-color);
@@ -250,7 +246,6 @@ ul {
 }
 
 .hero-title {
-  padding-top: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -362,6 +357,7 @@ ul {
 }
 
 .activity-text {
+  font-weight: 500;
   position: absolute;
   font-size: 14px;
   line-height: 1.14;
@@ -414,8 +410,8 @@ ul {
   background-position: center;
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
   background-color: var(--accent-color);
   fill: var(--primary-bg-color);
 }
@@ -498,8 +494,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -520,8 +515,7 @@ ul {
   box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.shadow:hover,
-.shadow:focus {
+.shadow:hover, .shadow:focus {
   box-shadow: 0px 4px rgba(54, 58, 248, 0.253);
 }
 
@@ -560,8 +554,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress-link:hover,
-.adress-link:focus {
+.adress-link:hover, .adress-link:focus {
   color: var(--accent-color);
 }
 
@@ -573,8 +566,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -639,10 +631,6 @@ ul {
   box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06), 0px 1px rgba(0, 0, 0, 0.12);
 }
 
-.gallery-list:hover .gallary-top-text {
-  transform: translateY(0);
-}
-
 .gallery-img {
   display: block;
   margin: 0;
@@ -667,6 +655,10 @@ ul {
   padding: 24px 63px;
   transform: translateY(100%);
   transition: transform 300ms linear;
+}
+
+.gallery-list:hover .gallary-top-text {
+  transform: translateY(0);
 }
 
 .gallery-title {
@@ -767,8 +759,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover, .close-btn:focus {
   background-image: url(../images/close2.png);
   border: 1px solid var(--accent-color);
 }
@@ -812,6 +803,14 @@ ul {
   margin-bottom: 10px;
   padding-left: 41px;
   outline: none;
+}
+
+.modal-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-input-icon {
@@ -884,14 +883,6 @@ ul {
 .input-icon-check {
   display: flex;
   fill: var(--accent-whiter-color);
-}
-
-.modal-input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
 }
 
 .modal-fielt {

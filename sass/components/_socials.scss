@@ -34,8 +34,8 @@
   height: 20px;
   background-size: contain;
   background-position: center;
-  .socials-link:hover&,
-  .socials-link:focus& {
+  .socials-link:hover &,
+  .socials-link:focus & {
     background-color: var(--accent-color);
     fill: var(--primary-bg-color);
   }
