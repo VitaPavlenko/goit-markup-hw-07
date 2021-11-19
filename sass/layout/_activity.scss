@@ -2,16 +2,16 @@
   display: flex;
 }
 
-.activity-list {
+.activity__list {
   margin-left: 30px;
   position: relative;
 }
 
-.activity-list:first-child {
+.activity__list:first-child {
   margin-left: 0;
 }
 
-.activity-text {
+.activity__text {
   font-weight: 500;
   position: absolute;
   font-size: 14px;

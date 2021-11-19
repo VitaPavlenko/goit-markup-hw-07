@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.feature-list {
+.feature__list {
   width: 25%;
   margin-left: 30px;
   &:first-child {
@@ -10,7 +10,7 @@
   }
 }
 
-.feature-img {
+.feature__img {
   margin-bottom: 30px;
   display: flex;
   width: 270px;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 
-.feature-icon {
+.feature__icon {
   width: 70px;
   height: 70px;
   align-items: center;
