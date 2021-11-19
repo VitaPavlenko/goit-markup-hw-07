@@ -5,10 +5,9 @@
 
 .client-list {
   margin-left: 30px;
-}
-
-.client-list:first-child {
-  margin-left: 0px;
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .clients-link {
@@ -23,17 +22,15 @@
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+  &:hover .clients-icon,
+  &:focus .clients-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .clients-icon {
@@ -45,9 +42,8 @@
 
 .shadow {
   box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.shadow:hover,
-.shadow:focus {
-  box-shadow: 0px 4px rgba(54, 58, 248, 0.253);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px rgba(54, 58, 248, 0.253);
+  }
 }

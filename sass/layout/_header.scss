@@ -14,13 +14,18 @@
 
 .nav-list {
   margin-right: 50px;
-}
-
-.nav-list:last-child {
-  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .nav-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -33,19 +38,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
-.nav-link {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .nav-adress {
@@ -61,15 +58,13 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-adress-list:last-child {
-  margin: 0;
-}
-
-.nav-adress-list:hover,
-.nav-adress-list:focus {
-  fill: var(--accent-color);
+  &:last-child {
+    margin: 0;
+  }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .widget {
@@ -100,17 +95,17 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.connect:hover,
-.connect:focus {
-  color: var(--accent-color);
+.connect {
+  & .current {
+    color: var(--accent-color);
+  }
 }
-
-.connect .current {
-  color: var(--accent-color);
-}
-
 .current::after {
   content: '';
   background-color: var(--accent-color);

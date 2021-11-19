@@ -31,12 +31,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  background-image: url(../images/close2.png);
-  border: 1px solid var(--accent-color);
+  &:hover,
+  &:focus {
+    background-image: url(../images/close2.png);
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .is-hidden {
@@ -78,6 +77,12 @@
   margin-bottom: 10px;
   padding-left: 41px;
   outline: none;
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  &:focus + .modal-input-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-input-icon {
@@ -135,34 +140,30 @@
   margin: 5px;
 }
 
-.check-text span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  margin-right: 5px;
+.check-text {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-right: 5px;
+  }
 }
-
 .input-icon-check {
   display: flex;
   fill: var(--accent-whiter-color);
 }
 
-.modal-input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
-}
 .modal-fielt {
   margin-bottom: 10px;
 }
 
-.input-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border: none;
+.input-check {
+  &:checked + .check-text span {
+    background-color: var(--accent-color);
+    border: none;
+  }
 }

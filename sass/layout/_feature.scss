@@ -5,10 +5,9 @@
 .feature-list {
   width: 25%;
   margin-left: 30px;
-}
-
-.feature-list:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .feature-img {
